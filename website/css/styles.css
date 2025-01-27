@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Garamond Classico CS";
+  src: url("/assets/fonts/garamond_classico_sc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0; /* Ensure there are no default margins */
+  display: flex;
+  flex-direction: column; /* Allow flexbox column layout  */
+}
+
+/* Makes the container take up available space
+ * Going back to the body 
+ */
+.container {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold !important;
+  color: #f9d9f4 !important;
+  font-family: "Garamond Classico CS", serif !important;
+}
+
+/* regular text body */
+body {
+  /*box-sizing: content-box !important;*/
+  font-family: "Georgia", serif !important;
+  font-size: 16px;
+  line-height: 1.6;
+  /*background-color: #212b2b !important;*/
+  background-color: #223748 !important;
+  color: #ffffff !important;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: #a6aaaa !important; /* This is background of navbar*/
+  background-color: #c3caa7 !important;
+  padding: 15px 30px !important;
+  font-family: "Garamond Classico CS", serif !important;
+}
+
+/* For the actual nav links text */
+.navbar .nav-link {
+  /*color: #212b2b !important;*/
+  color: #223748 !important;
+  font-family: "Garamond Classico CS", serif !important;
+  font-size: 22px;
+}
+
+/* For the actual nav links hover */
+.navbar .nav-link:hover {
+  color: #ecef3e !important;
+}
+
+/* For the actual nav links */
+.navbar .nav-link.active {
+  font-family: "Garamond Classico CS", serif !important;
+  font-size: 22px;
+  font-style: italic !important;
+  text-decoration: underline !important;
+  color: #a10042 !important;
+}
+
+/* For the text inside nav menu */
+.navbar .navbar-brand {
+  /*color: #212b2b !important;*/
+  color: #223748 !important;
+  font-family: "Garamond Classico CS", serif !important;
+  font-size: 22px;
+}
+
+/* For the text inside nav menu */
+.navbar .navbar-brand:hover {
+  color: #ecef3e !important;
+}
+
+/* Navbar toggler (burger icon) outline
+ * Same color as my background for body
+.navbar-toggler {
+  border-color: rgba(33, 43, 43, 0.5);
+}
+ */
+
+.navbar-toggler {
+  border: none; /* Remove border around the icon */
+  box-shadow: none; /* Remove any shadow */
+  padding: 0; /* Ensure there's no extra padding */
+  margin: 0; /* Ensure no extra margin */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* Navbar toggler (burger icon) itself
+ * Same color as my background for body
+ */
+.navbar-toggler-icon {
+  /*background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33, 43, 43, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");*/
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34, 55, 72, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* mailto: link color*/
+a[href^="mailto:"] {
+  color: #ecef3e;
+  text-decoration: none; /* Removes underline */
+}
+
+/* mailto: link hover*/
+a[href^="mailto:"]:hover {
+  color: #b4b722; /* Replace with the hover color you want */
+  text-decoration: underline; /* Add underline on hover*/
+}
+
+/* Globally remove bullets from all unordered lists */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#experience p {
+  margin-bottom: 15px; /* Adds spacing between paragraphs */
+}
+
+/* Re-enable bullets under the experience section */
+#experience ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for LinkedIn link */
+a[href*="linkedin.com"] {
+  color: #ecef3e;
+}
+
+a[href*="linkedin.com"]:hover {
+  color: #b4b722;
+}
+
+/* Style for phone number*/
+a[href*="tel:+18505020297"] {
+  color: #ecef3e;
+  text-decoration: none; /* Removes underline */
+}
+
+a[href*="tel:+18505020297"]:hover {
+  color: #b4b722;
+  text-decoration: underline; /* Add underline on hover*/
+}
+
+/* Footer */
+footer {
+  font-family: "Garamond Classico CS";
+  /*background-color: #a6aaaa !important; /* This is background of footer*/
+  /*color: #212b2b !important;*/
+  background-color: #c3caa7 !important;
+  color: #223748 !important;
+  font-size: 18px !important;
+  padding: 20px;
+  text-align: center;
+}
